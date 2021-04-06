@@ -3,7 +3,7 @@ name = "stdout-sink"
 version = "0.2.1"
 authors = ["Joey Ezechiels <joey.ezechiels@gmail.com>"]
 edition = "2018"
-description = "Print to stdout, in a separate process"
+description = "Print to stdout from a separate process"
 license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
