@@ -23,7 +23,7 @@ fn main() -> Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use ipc_chan::{Config, Result, Source};
+    use ipc_chan::{send_str, Config, Result, Source};
     use std::time::Duration;
 
     #[test]
@@ -34,7 +34,7 @@ mod tests {
         };
         let mut source = Source::from_config(cfg.clone())?;
         for i in 0 .. 10 {
-            source.send(&format!("Hello World! {}", i))?;
+            send_str!(source, "Hello World! {}", i)?;
             std::thread::sleep(Duration::from_millis(100));
         }
         Ok(())
