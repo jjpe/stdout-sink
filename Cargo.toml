@@ -1,6 +1,6 @@
 [package]
 name = "stdout-sink"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Joey Ezechiels <joey.ezechiels@gmail.com>"]
 edition = "2018"
 description = "Print to stdout from a separate process"
